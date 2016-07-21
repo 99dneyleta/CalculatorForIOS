@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculatorFORIOSDevices" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" alpha="0.69999999999999996" tag="1" contentMode="bottom" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o01-tH-zQ5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="115"/>
+                                <color key="backgroundColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="tintColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="o01-tH-zQ5" secondAttribute="height" multiplier="120:23" id="K5X-SY-Mac"/>
+                                    <constraint firstAttribute="height" constant="115" id="hKA-uz-OuZ"/>
+                                    <constraint firstAttribute="width" secondItem="o01-tH-zQ5" secondAttribute="height" multiplier="120:23" id="uTn-yf-dL2"/>
+                                    <constraint firstAttribute="height" constant="115" id="woM-Yl-eMW"/>
+                                    <constraint firstAttribute="width" constant="600" id="xwn-DF-QEf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="100"/>
+                                <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="highlightedColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="shadowColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="K5X-SY-Mac"/>
+                                        <exclude reference="uTn-yf-dL2"/>
+                                        <exclude reference="woM-Yl-eMW"/>
+                                        <exclude reference="xwn-DF-QEf"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ff9-sr-qBh">
+                                <rect key="frame" x="0.0" y="116" width="149" height="95"/>
+                                <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="AC">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llk-NI-jRQ">
+                                <rect key="frame" x="150" y="116" width="149" height="95"/>
+                                <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="+/-">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSd-XL-IcZ">
+                                <rect key="frame" x="450" y="116" width="150" height="95"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="/">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlX-4q-s7y">
+                                <rect key="frame" x="0.0" y="212" width="149" height="95"/>
+                                <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quk-C2-dPw">
+                                <rect key="frame" x="150" y="212" width="149" height="95"/>
+                                <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ze-n6-ucU">
+                                <rect key="frame" x="300" y="212" width="149" height="95"/>
+                                <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIx-e1-85t">
+                                <rect key="frame" x="450" y="212" width="150" height="95"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0c-zD-wh7">
+                                <rect key="frame" x="0.0" y="308" width="149" height="95"/>
+                                <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLU-vC-cF3">
+                                <rect key="frame" x="150" y="308" width="149" height="95"/>
+                                <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JO5-Wz-Lei">
+                                <rect key="frame" x="300" y="308" width="149" height="95"/>
+                                <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iex-Gs-F15">
+                                <rect key="frame" x="450" y="308" width="150" height="95"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5C1-cp-Gi9">
+                                <rect key="frame" x="150" y="404" width="149" height="100"/>
+                                <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssE-wm-0Id">
+                                <rect key="frame" x="300" y="404" width="149" height="100"/>
+                                <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fde-SX-PXV">
+                                <rect key="frame" x="450" y="404" width="150" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdt-Pk-xAT">
+                                <rect key="frame" x="300" y="505" width="149" height="95"/>
+                                <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title=".">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcU-OF-z5S">
+                                <rect key="frame" x="450" y="505" width="150" height="95"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ula-zw-g2H">
+                                <rect key="frame" x="0.0" y="404" width="149" height="100"/>
+                                <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgs-bQ-yng">
+                                <rect key="frame" x="0.0" y="505" width="299" height="95"/>
+                                <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y21-k4-GXw">
+                                <rect key="frame" x="300" y="116" width="149" height="95"/>
+                                <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="30"/>
+                                <state key="normal" title="%">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42701425124437387" green="0.42701425124437387" blue="0.42701425124437387" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fde-SX-PXV" firstAttribute="leading" secondItem="ssE-wm-0Id" secondAttribute="trailing" constant="1" id="0D5-aJ-bsh"/>
+                            <constraint firstItem="ff9-sr-qBh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="0vU-Io-LeO"/>
+                            <constraint firstItem="UIx-e1-85t" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" constant="1" id="1R0-MB-Bxa"/>
+                            <constraint firstItem="ssE-wm-0Id" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" id="1bX-RE-N5b"/>
+                            <constraint firstItem="OSd-XL-IcZ" firstAttribute="top" secondItem="o01-tH-zQ5" secondAttribute="bottom" constant="1" id="2gV-CU-56C"/>
+                            <constraint firstItem="llk-NI-jRQ" firstAttribute="top" secondItem="o01-tH-zQ5" secondAttribute="bottom" constant="1" id="2zW-Kg-49l"/>
+                            <constraint firstItem="k0c-zD-wh7" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" id="3Sk-Wr-Etn"/>
+                            <constraint firstItem="ssE-wm-0Id" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" constant="5" id="3VK-Fo-qPg"/>
+                            <constraint firstItem="3Ze-n6-ucU" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" id="3Yf-wC-Be7"/>
+                            <constraint firstItem="ff9-sr-qBh" firstAttribute="top" secondItem="o01-tH-zQ5" secondAttribute="bottom" constant="1" id="3wC-iF-2Fo"/>
+                            <constraint firstItem="iex-Gs-F15" firstAttribute="leading" secondItem="JO5-Wz-Lei" secondAttribute="trailing" constant="1" id="6fy-WM-QpW"/>
+                            <constraint firstItem="Vdt-Pk-xAT" firstAttribute="leading" secondItem="Wgs-bQ-yng" secondAttribute="trailing" constant="1" id="7ve-1o-844"/>
+                            <constraint firstItem="o01-tH-zQ5" firstAttribute="trailing" secondItem="OSd-XL-IcZ" secondAttribute="trailing" id="8EC-0u-wtq"/>
+                            <constraint firstItem="iex-Gs-F15" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" constant="1" id="8Pt-QX-do1"/>
+                            <constraint firstItem="quk-C2-dPw" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" id="8X3-4b-hXs"/>
+                            <constraint firstItem="vLU-vC-cF3" firstAttribute="leading" secondItem="k0c-zD-wh7" secondAttribute="trailing" constant="1" id="8cH-ui-7LX"/>
+                            <constraint firstItem="quk-C2-dPw" firstAttribute="leading" secondItem="DlX-4q-s7y" secondAttribute="trailing" constant="1" id="B9i-Z6-xt3"/>
+                            <constraint firstItem="iex-Gs-F15" firstAttribute="top" secondItem="UIx-e1-85t" secondAttribute="bottom" constant="1" id="C0u-ml-PnG"/>
+                            <constraint firstItem="vLU-vC-cF3" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" id="EVr-qb-cxc"/>
+                            <constraint firstItem="DlX-4q-s7y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Hjo-FC-LZC"/>
+                            <constraint firstItem="5C1-cp-Gi9" firstAttribute="top" secondItem="vLU-vC-cF3" secondAttribute="bottom" constant="1" id="IE2-Cc-OPd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qcU-OF-z5S" secondAttribute="trailing" constant="-20" id="Ir8-6i-hn7"/>
+                            <constraint firstItem="vLU-vC-cF3" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" id="Is2-BW-UuZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iex-Gs-F15" secondAttribute="trailing" constant="-20" id="JaD-7n-IUJ"/>
+                            <constraint firstItem="5C1-cp-Gi9" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" constant="5" id="Lvu-Qi-AQi"/>
+                            <constraint firstItem="ula-zw-g2H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="MJL-6X-hQW"/>
+                            <constraint firstItem="Y21-k4-GXw" firstAttribute="top" secondItem="o01-tH-zQ5" secondAttribute="bottom" constant="1" id="Mbu-IR-qc6"/>
+                            <constraint firstItem="Vdt-Pk-xAT" firstAttribute="top" secondItem="ssE-wm-0Id" secondAttribute="bottom" constant="1" id="MeC-bM-m0x"/>
+                            <constraint firstItem="JO5-Wz-Lei" firstAttribute="leading" secondItem="vLU-vC-cF3" secondAttribute="trailing" constant="1" id="O57-0s-30V"/>
+                            <constraint firstItem="ula-zw-g2H" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" id="OjR-PF-7Xc"/>
+                            <constraint firstItem="DlX-4q-s7y" firstAttribute="top" secondItem="ff9-sr-qBh" secondAttribute="bottom" constant="1" id="OxE-dQ-CtZ"/>
+                            <constraint firstItem="fde-SX-PXV" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" constant="5" id="QRw-rA-YFq"/>
+                            <constraint firstItem="DlX-4q-s7y" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" id="QfC-WX-eYo"/>
+                            <constraint firstItem="UIx-e1-85t" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" id="QwD-Cq-VsC"/>
+                            <constraint firstItem="UIx-e1-85t" firstAttribute="top" secondItem="OSd-XL-IcZ" secondAttribute="bottom" constant="1" id="SCO-WP-Mll"/>
+                            <constraint firstItem="OSd-XL-IcZ" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" id="TEu-aE-qMl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OSd-XL-IcZ" secondAttribute="trailing" constant="-20" id="U3E-JT-lb4"/>
+                            <constraint firstItem="5C1-cp-Gi9" firstAttribute="leading" secondItem="ula-zw-g2H" secondAttribute="trailing" constant="1" id="WAu-c6-qUa"/>
+                            <constraint firstItem="3Ze-n6-ucU" firstAttribute="top" secondItem="Y21-k4-GXw" secondAttribute="bottom" constant="1" id="WyO-Eq-lpn"/>
+                            <constraint firstItem="ula-zw-g2H" firstAttribute="top" secondItem="k0c-zD-wh7" secondAttribute="bottom" constant="1" id="X50-bA-LFl"/>
+                            <constraint firstItem="Wgs-bQ-yng" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="XJc-Uh-v4q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UIx-e1-85t" secondAttribute="trailing" constant="-20" id="agB-xG-pi0"/>
+                            <constraint firstItem="OSd-XL-IcZ" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" constant="1" id="b6t-J2-l8H"/>
+                            <constraint firstItem="ula-zw-g2H" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" constant="5" id="bSn-6X-DhR"/>
+                            <constraint firstItem="OSd-XL-IcZ" firstAttribute="height" secondItem="o01-tH-zQ5" secondAttribute="height" constant="-20" id="bbL-0d-LAB"/>
+                            <constraint firstItem="3Ze-n6-ucU" firstAttribute="leading" secondItem="quk-C2-dPw" secondAttribute="trailing" constant="1" id="biF-di-cBZ"/>
+                            <constraint firstItem="qcU-OF-z5S" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" id="ccB-eW-JI9"/>
+                            <constraint firstItem="qcU-OF-z5S" firstAttribute="top" secondItem="fde-SX-PXV" secondAttribute="bottom" constant="1" id="cgQ-iM-HOI"/>
+                            <constraint firstItem="5C1-cp-Gi9" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" id="cho-zb-6EO"/>
+                            <constraint firstItem="DlX-4q-s7y" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" id="e4a-bM-1AR"/>
+                            <constraint firstItem="quk-C2-dPw" firstAttribute="top" secondItem="llk-NI-jRQ" secondAttribute="bottom" constant="1" id="eKj-vH-a4t"/>
+                            <constraint firstItem="o01-tH-zQ5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fSO-6Q-soE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wgs-bQ-yng" secondAttribute="bottom" id="gDi-nv-hPm"/>
+                            <constraint firstItem="OSd-XL-IcZ" firstAttribute="leading" secondItem="Y21-k4-GXw" secondAttribute="trailing" constant="1" id="guU-Vk-3K9"/>
+                            <constraint firstItem="Wgs-bQ-yng" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="hWF-B5-nE6"/>
+                            <constraint firstItem="Wgs-bQ-yng" firstAttribute="top" secondItem="ula-zw-g2H" secondAttribute="bottom" constant="1" id="hhv-FL-aFR"/>
+                            <constraint firstItem="UIx-e1-85t" firstAttribute="leading" secondItem="3Ze-n6-ucU" secondAttribute="trailing" constant="1" id="hvD-w0-STf"/>
+                            <constraint firstItem="llk-NI-jRQ" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" id="ixY-2O-Pmg"/>
+                            <constraint firstItem="ssE-wm-0Id" firstAttribute="leading" secondItem="5C1-cp-Gi9" secondAttribute="trailing" constant="1" id="j8i-xU-anc"/>
+                            <constraint firstItem="Y21-k4-GXw" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" id="jGd-M5-yfi"/>
+                            <constraint firstItem="Y21-k4-GXw" firstAttribute="leading" secondItem="llk-NI-jRQ" secondAttribute="trailing" constant="1" id="k7Q-F5-EP2"/>
+                            <constraint firstItem="vLU-vC-cF3" firstAttribute="top" secondItem="quk-C2-dPw" secondAttribute="bottom" constant="1" id="kIR-tQ-XpY"/>
+                            <constraint firstItem="Vdt-Pk-xAT" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" id="l9o-XZ-qra"/>
+                            <constraint firstItem="fde-SX-PXV" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" constant="1" id="lZz-Ua-d6f"/>
+                            <constraint firstItem="ssE-wm-0Id" firstAttribute="top" secondItem="JO5-Wz-Lei" secondAttribute="bottom" constant="1" id="lxW-B3-8BN"/>
+                            <constraint firstItem="quk-C2-dPw" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" id="n9z-gv-qgg"/>
+                            <constraint firstItem="Vdt-Pk-xAT" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" id="nvw-e6-kwc"/>
+                            <constraint firstItem="Y21-k4-GXw" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" id="ogQ-9U-Vwh"/>
+                            <constraint firstItem="fde-SX-PXV" firstAttribute="top" secondItem="iex-Gs-F15" secondAttribute="bottom" constant="1" id="p8a-MC-vbQ"/>
+                            <constraint firstItem="JO5-Wz-Lei" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" id="pC7-Pc-glc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vdt-Pk-xAT" secondAttribute="bottom" id="q67-zY-fJf"/>
+                            <constraint firstItem="k0c-zD-wh7" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" id="qW5-Ua-Ct9"/>
+                            <constraint firstItem="llk-NI-jRQ" firstAttribute="leading" secondItem="ff9-sr-qBh" secondAttribute="trailing" constant="1" id="qZk-tX-70D"/>
+                            <constraint firstItem="k0c-zD-wh7" firstAttribute="top" secondItem="DlX-4q-s7y" secondAttribute="bottom" constant="1" id="qci-iK-Kw7"/>
+                            <constraint firstItem="qcU-OF-z5S" firstAttribute="leading" secondItem="Vdt-Pk-xAT" secondAttribute="trailing" constant="1" id="qyP-GT-df8"/>
+                            <constraint firstItem="llk-NI-jRQ" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" id="sZR-Ti-vs3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qcU-OF-z5S" secondAttribute="bottom" id="teb-b4-7Ei"/>
+                            <constraint firstItem="iex-Gs-F15" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" id="uOI-VB-h39"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fde-SX-PXV" secondAttribute="trailing" constant="-20" id="vfi-t5-xZX"/>
+                            <constraint firstItem="JO5-Wz-Lei" firstAttribute="height" secondItem="ff9-sr-qBh" secondAttribute="height" id="wN5-Hy-EFJ"/>
+                            <constraint firstItem="JO5-Wz-Lei" firstAttribute="top" secondItem="3Ze-n6-ucU" secondAttribute="bottom" constant="1" id="wVl-fN-HJr"/>
+                            <constraint firstItem="o01-tH-zQ5" firstAttribute="leading" secondItem="Wgs-bQ-yng" secondAttribute="leading" id="wny-aq-AMj"/>
+                            <constraint firstItem="3Ze-n6-ucU" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" id="xNg-7H-hGU"/>
+                            <constraint firstItem="o01-tH-zQ5" firstAttribute="leading" secondItem="ff9-sr-qBh" secondAttribute="leading" id="xxN-jo-P5j"/>
+                            <constraint firstItem="qcU-OF-z5S" firstAttribute="width" secondItem="ff9-sr-qBh" secondAttribute="width" constant="1" id="yLn-PC-Uox"/>
+                            <constraint firstItem="k0c-zD-wh7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="z7R-UM-nHJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="313"/>
+        </scene>
+    </scenes>
+</document>
